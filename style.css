@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    color: dodgerblue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: cadetblue;
+}
+
+p:first-of-type {
+    color: goldenrod;
+}
+
+p:nth-of-type(3) {
+    color: chocolate;
+}
+
+p:nth-of-type(4) {
+    color: goldenrod;
+}
+
+#tictactoe-table {
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.square {
+    border: 1px solid lightgrey;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    color: cadetblue;
+}
+
+.player-information {
+    margin-top: 2rem;
+}
+
+.alert {
+    position: relative;
+    left: 0;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.8;
+    border-radius: 5px;
+    cursor: hand;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.alertCheckbox {
+    display: none;
+}
+
+/*:checked + .alert {*/
+/*    display: none;*/
+/*}*/
+
+.alertText {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+}
+
+.alertClose {
+    float: right;
+    padding-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.info {
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    color: #999;
+}
+
+.notice {
+    background-color: #FEE;
+    border: 1px solid #EDD;
+    color: #A66;
+}
